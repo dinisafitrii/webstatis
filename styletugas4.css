@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    image-resolution: 100%;
+}
+body {
+    /*background-color: beige;*/
+    background-image: url(images/Background\ Konstelasi.jpeg);
+    background-repeat: repeat;
+    background-size: auto;
+}
+h1 {
+    color: black;
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 40px 30px;
+}
+h2 {
+    color: black;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: cadetblue;
+}
+p {
+    background-color: rgb(222, 239, 249);
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 20px;
+    width: 900px;
+    margin: 30px auto;
+}
+d1 {
+    line-height: 20px;
+    font-size: large;
+}
+dt {
+    text-align: center;
+    font-family: monospace;
+    background-color:rgb(173, 209, 227);
+    margin-top: 10px;
+    padding: 5px;
+}
+dd {
+    font-family: monospace;
+    background-color: rgb(220, 232, 249);
+    width: 1220px;
+    height: 250px auto;
+    text-indent: 100px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: underline;
+    color:black;
+    background-color: rgb(195, 224, 239);
+    text-transform: capitalize;
+    line-height: 20px;
+    padding: 20px;
+}
+.Himpunan Rasi Bintang {
+    width: 900px;
+    margin-top: 30px auto;
+}
+d1 img {
+    width: 200px;
+    float: left;
+    /*margin-top; 10px;
+    margin-right: 20px;*/
+    margin: 10px 20px 10px 0px;
+    padding: 10px;
+    background-color: black;
+    /border-top-left-radius: 50px;/
+    border-radius: 100px;
+}
+.clear {
+    clear: left;
+}
+.footer {
+    text-align: center;
+    margin-left: 10px;
+}
