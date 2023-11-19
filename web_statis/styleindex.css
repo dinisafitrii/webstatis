@@ -1,0 +1,368 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+nav {
+    z-index: 100;
+    color: white;
+    text-align: center;
+    position: fixed;
+    line-height: 60px;
+    width: 100px;
+}
+
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 80px;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 625px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: #dedede;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding:  16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 60px;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:transparent;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color:whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: black;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+header .intro h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.tombol {
+    background-color: navy;
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+
+section {
+    padding: 10px 0px 10px 0px;
+}
+
+section h3 {
+    font-size: 30px;
+}
+
+section h3::after {
+    content:"";
+    border-bottom: 5px solid navy;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+#about {
+    text-align: center;
+}
+
+#solarsystem {
+    text-align: center;
+}
+
+.bg-card {
+    width: 70%;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.card {
+    width: 250px;
+    height: 400px;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.card:hover {
+    box-shadow: 0px 0px 10px navy;
+    transition: 400ms;
+}
+
+#gallery {
+    text-align: center;
+}
+
+.gambar {
+    overflow: hidden;
+    width: 250px;
+    height: 200px;
+}
+.gambar img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.des-card {
+    padding: px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.des-card h2 {
+    color: navy;
+    margin-bottom: 10px;
+}
+.des-card p {
+    line-height: 20px;
+    color: black;
+}
+
+.bg-card a {
+    text-decoration: none;
+}
+.card:hover img {
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+section#gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+section#gallery div {
+    padding: 10px;
+}
+
+section#gallery div .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+  
+section#gallery div row .column {
+    flex: 50%;
+    padding: 0 5px;
+  }
+  
+section#gallery .column img {
+    margin-top: 15px;
+    vertical-align: middle;
+  }
+
+section#gallery div img {
+    height: 150px;
+    border-radius: 5px;
+}
+
+section#gallery div img:hover {
+    transition: all 0.25 ease-in-out;
+    transform: scale(1.1);
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 4rem 0 4rem;
+  margin-top: 3rem;
+}
+footer .socials {
+  padding: 1rem 0;
+}
+footer .socials a {
+  color: whitesmoke;
+  margin: 1rem;
+}
+footer .socials a:hover {
+  color: navy;
+}
+footer .credit {
+  font-size: 0.8rem;
+}
+footer .credit a {
+  color: whitesmoke;
+  font-weight: 700;
+}
+footer .credit p {
+  color:whitesmoke;
+}
+
+@media screen and (max-width:991.98px) {
+    .layar-dalam {
+        width: 600%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid gray;
+        background-color: white;
+        line-height: 40px;
+    }
+
+    nav .menu ul li a {
+        color: darkgray;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+}
